@@ -15,7 +15,7 @@ class NodeLibrary {
 
 		let nodeMaterial = null;
 
-		const nodeMaterialClass = this.getMaterialNodeClass( material.type );
+		const nodeMaterialClass = this.getMaterialNodeClass( material.constructor.name );
 
 		if ( nodeMaterialClass !== null ) {
 
